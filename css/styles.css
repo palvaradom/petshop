@@ -10,11 +10,11 @@
     --blanco: #ffffff;
     --negro: #000000;
     --marron-oscuro: #212222;
-    --marron-claro: #3B2415;
+    --marron-claro: #3b2415;
     --marron-mas-claro: #786960;
-    --naranja: #F0A83D;
-    --gris-claro: #FAFAF6;
-    --gris-oscuro: #8B8787;
+    --naranja: #f0a83d;
+    --gris-claro: #fafaf6;
+    --gris-oscuro: #8b8787;
 }
 
 html {
@@ -54,7 +54,6 @@ header .idioma .seleccion-idioma {
     /*padding-right: 3%;*/
     list-style: none;
     margin-right: 5%;
-    
 }
 
 header .idioma .seleccion-idioma li:first-child {
@@ -237,11 +236,19 @@ main .productos-destacados .productos-destacados-container article p {
     font-weight: bold;
 }
 
-main .productos-destacados .productos-destacados-container article p:nth-child(2) {
+main
+    .productos-destacados
+    .productos-destacados-container
+    article
+    p:nth-child(2) {
     color: var(--marron-claro);
 }
 
-main .productos-destacados .productos-destacados-container article p:nth-child(3) {
+main
+    .productos-destacados
+    .productos-destacados-container
+    article
+    p:nth-child(3) {
     color: var(--naranja);
     padding-bottom: 2%;
 }
@@ -278,16 +285,28 @@ main .contactanos .contactanos-container .contact-form form {
     width: 100%;
 }
 
-main .contactanos .contactanos-container .contact-form form .input-container input {
+main
+    .contactanos
+    .contactanos-container
+    .contact-form
+    form
+    .input-container
+    input {
     width: 100%;
     padding: 5%;
     border-radius: 22px;
-    background-color: #3B2415;
+    background-color: #3b2415;
     border: none;
     margin-bottom: 3%;
 }
 
-main .contactanos .contactanos-container .contact-form form .input-container input::placeholder {
+main
+    .contactanos
+    .contactanos-container
+    .contact-form
+    form
+    .input-container
+    input::placeholder {
     color: var(--blanco);
 }
 
@@ -296,7 +315,13 @@ main .contactanos .contactanos-container .contact-form form .buttons-container {
     justify-content: center;
 }
 
-main .contactanos .contactanos-container .contact-form form .buttons-container button {
+main
+    .contactanos
+    .contactanos-container
+    .contact-form
+    form
+    .buttons-container
+    button {
     width: 25%;
     border-radius: 15px;
     border: none;
@@ -305,12 +330,24 @@ main .contactanos .contactanos-container .contact-form form .buttons-container b
     margin-top: 5%;
 }
 
-main .contactanos .contactanos-container .contact-form form .buttons-container button:nth-child(1) {
+main
+    .contactanos
+    .contactanos-container
+    .contact-form
+    form
+    .buttons-container
+    button:nth-child(1) {
     background-color: var(--gris-oscuro);
     margin-right: 2%;
 }
 
-main .contactanos .contactanos-container .contact-form form .buttons-container button:nth-child(2) {
+main
+    .contactanos
+    .contactanos-container
+    .contact-form
+    form
+    .buttons-container
+    button:nth-child(2) {
     background-color: var(--naranja);
 }
 
@@ -348,7 +385,7 @@ footer .more-info .localidad-container figure {
 
 footer .more-info .localidad-container figure i {
     font-size: 5rem;
-    color: var(--blanco)
+    color: var(--blanco);
 }
 
 footer .more-info .localidad-descripcion {
@@ -361,7 +398,7 @@ footer .more-info .localidad-descripcion {
 footer .more-info .localidad-descripcion p:nth-child(1) {
     font-size: 3rem;
     font-weight: bold;
-    color: var(--blanco)
+    color: var(--blanco);
 }
 
 footer .more-info .localidad-descripcion p:nth-child(2) {
@@ -390,7 +427,7 @@ footer .more-info .telefono-container figure {
 
 footer .more-info .telefono-container figure i {
     font-size: 5rem;
-    color: var(--blanco)
+    color: var(--blanco);
 }
 
 footer .more-info .telefono-descripcion {
@@ -403,12 +440,12 @@ footer .more-info .telefono-descripcion {
 footer .more-info .telefono-descripcion p:nth-child(1) {
     font-size: 3rem;
     font-weight: bold;
-    color: var(--blanco)
+    color: var(--blanco);
 }
 
 footer .more-info .telefono-descripcion p:nth-child(2) {
     color: var(--gris-oscuro);
-} 
+}
 
 /*************************************/
 footer .more-info .email-container {
@@ -432,7 +469,7 @@ footer .more-info .email-container figure {
 
 footer .more-info .email-container figure i {
     font-size: 5rem;
-    color: var(--blanco)
+    color: var(--blanco);
 }
 
 footer .more-info .email-descripcion {
@@ -445,7 +482,7 @@ footer .more-info .email-descripcion {
 footer .more-info .email-descripcion p:nth-child(1) {
     font-size: 3rem;
     font-weight: bold;
-    color: var(--blanco)
+    color: var(--blanco);
 }
 
 footer .more-info .email-descripcion p:nth-child(2) {
@@ -463,4 +500,107 @@ footer figure {
 footer figure img {
     height: 10%;
     margin-right: 5%;
+}
+
+@media (max-width: 480px) {
+    header .navegador nav {
+        display: none;
+    }
+
+    main .banner .banner-description {
+        width: 90%;
+    }
+    main .banner figure img {
+        object-fit: cover;
+        object-position: left;
+    }
+
+    main .banner .banner-description .descuento {
+        justify-content: right;
+    }
+
+    main .banner .banner-description .button-comederos-container {
+        justify-content: right;
+    }
+
+    main .productos-destacados {
+        height: auto;
+    }
+
+    main .productos-destacados .productos-destacados-container {
+        flex-direction: column;
+        margin-top: 8%;
+    }
+
+    main .contactanos .contactanos-container {
+        width: 70%;
+    }
+
+    main
+        .contactanos
+        .contactanos-container
+        .contact-form
+        form
+        .buttons-container
+        button {
+        width: 70%;
+        height: 60%;
+    }
+    footer {
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    footer .more-info {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 20%;
+    }
+
+    footer .more-info .localidad-container figure {
+        height: 50px;
+        width: 50px;
+        justify-content: center;
+    }
+
+    footer .more-info .localidad-container figure i {
+        font-size: 3rem;
+    }
+
+    footer .more-info .localidad-descripcion p:nth-child(1) {
+        font-size: 2rem;
+    }
+
+    footer .more-info .telefono-container figure {
+        height: 50px;
+        width: 50px;
+    }
+
+    footer .more-info .telefono-container figure i {
+        font-size: 3rem;
+    }
+
+    footer .more-info .telefono-descripcion p:nth-child(1) {
+        font-size: 2rem;
+    }
+
+    footer .more-info .email-container figure {
+        height: 50px;
+        width: 50px;
+    }
+
+    footer .more-info .email-container figure i {
+        font-size: 3rem;
+    }
+
+    footer .more-info .email-descripcion p:nth-child(1) {
+        font-size: 2rem;
+    }
+
+    footer figure {
+        width: 100%;
+        justify-content: center;
+    }
 }
